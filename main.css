@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300&display=swap');
+
+body {
+    background-image: url('images/bananas.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-top: 130px;
+}
+h1 {
+    font-family: 'Nunito', sans-serif;
+    text-align: center;
+    font-size: 90px;
+    color: rgb(85, 66, 31);
+    text-shadow: 2px 2px 2px rgb(187, 179, 70), -2px -2px 2px rgb(187, 179, 70);
+}
+header {
+    position: relative;
+    max-width: 60%;
+    height: 35px;
+    margin: auto;
+    display: flex;
+    z-index: 100;
+}
+header a {
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+    color: rgb(85, 66, 31);
+}
+header div {
+    width: 25%;
+    height: 35px;
+    text-align: center;
+    background-color: #DB9809;
+    border-radius: 7px 7px 0 0;
+    box-shadow: inset 0 -2px 2px #8D5700;
+}
+header div:hover {
+    position: relative;
+    background-color: #EAB822;
+    box-shadow: none;
+    z-index: 100;
+}
+#current_a {
+    position: relative;
+    background-color: #EAB822;
+    box-shadow: 2px 2px 2px #8D5700, -2px 0 2px #8D5700;
+    z-index: 100;
+}
+#current_af {
+    position: relative;
+    background-color: #EAB822;
+    box-shadow: 2px 2px 2px #8D5700;
+    z-index: 100;
+}
+#current_al {
+    position: relative;
+    background-color: #EAB822;
+    box-shadow: -2px 0 2px #8D5700;
+    z-index: 100;
+}
+#main_block {
+    position: relative;
+    background-color: #EAB822;
+    border-radius: 0 0 7px 7px;
+    max-width: 60%;
+    height: 220px;
+    margin: auto;
+    text-align: center;
+    padding-top: 10%;
+    z-index: 100;
+}
+#main_block form {
+    border-bottom: 2px solid #8D5700;
+    margin-left: 7%;
+    margin-right: 7%;
+    padding-bottom: 10%;
+}
+
+#entered_input {
+    font-family: 'Poppins', sans-serif;
+    border-radius: 7px;
+    border: 1px solid #DB9809;
+    background-color: #F8E7B4;
+    width: 40%;
+    outline: none;
+}
+#chosen_unit {
+    font-family: 'Poppins', sans-serif;
+    border-radius: 7px;
+    border: 1px solid #DB9809;
+    background-color: #F8E7B4;
+    color: rgb(85, 66, 31);
+}
+#submit {
+    font-family: 'Poppins', sans-serif;
+    border-radius: 7px;
+    border: 1px solid #8D5700;
+    background-color: #DB9809;
+    color: rgb(85, 66, 31);
+}
+
+#result {
+    font-family: 'Poppins', sans-serif;
+    font-size: 0.9em;
+    margin-top: 10%;
+    margin-right: 4%;
+    margin-left: 4%;
+}
+
+@media (min-width:1000px) {
+    
+    h1 {
+        font-family: 'Nunito', sans-serif;
+        text-align: center;
+        font-size: 70px;
+        margin-top: -5%;
+        color: rgb(85, 66, 31);
+        text-shadow: 2px 2px 5px rgb(187, 179, 70), -2px -2px 5px rgb(187, 179, 70);
+    }
+    header {
+        max-width: 600px;
+    }
+    #main_block {
+        max-width: 600px;
+    }
+    #main_block form {
+        margin-top: -15%;
+    }
+    #result {
+        margin-top: 15%;
+        font-size: 20px;
+    }
+}
+
+@media (max-width:420px) {
+
+    h1 {
+        margin-top: -10%;
+        font-size: 50px;
+        color: rgb(85, 66, 31);
+    }
+    header {
+        max-width: 80%;
+    }
+    header a {
+        font-size: 13px;
+    }
+    #main_block {
+        max-width: 80%;
+    }
+    #submit {
+        margin-top: 5%;
+    }
+
+}
